@@ -79,7 +79,7 @@ async def like_player():
                 "error": "Invalid UID",
                 "message": "Valid numeric UID required",
                 "status": 400,
-                "credits": "https://t.me/ishakspeed"
+                "credits": "https://t.me/nopethug"
             }), 400
 
         region, player_info = await detect_player_region(uid)
@@ -88,7 +88,7 @@ async def like_player():
                 "error": "Player not found",
                 "message": "Player not found on any server",
                 "status": 404,
-                "credits": "https://t.me/ishakspeed"
+                "credits": "https://t.me/nopethug"
             }), 404
 
         before_likes = player_info.AccountInfo.Likes
