@@ -137,7 +137,7 @@ def health_check():
             "status": "healthy" if all(token_status.values()) else "degraded",
             "servers": token_status,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "credits": "https://t.me/nopethug"
+            "credits": "https://t.me/ishakspeed"
         })
     except Exception as e:
         logger.error(f"Health check failed: {str(e)}")
@@ -154,7 +154,7 @@ async def root_home():
     """
     return jsonify({
         "message": "Api free fire like ",
-        "credits": "https://t.me/ishaspeed",
+        "credits": "https://t.me/ishakspeed",
     })
 
 def initialize_routes(app_instance, servers_config, token_cache_instance):
